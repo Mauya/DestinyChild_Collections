@@ -270,26 +270,3 @@ Now that we have our README.md file done, we can go ahead and push it up to Gith
 git add README.md
 git commit -m “Add README”
 git push
-And there we have it!
-
-
-Screenshot from 2016-10-26 11-07-53.png
-
- 
-As a bit of practice, try to keep your README file up-to-date as you make your way through this module!
-
-
-SUMMARY
-
-So in this lesson we’ve managed to create ourselves a nice README.md file that will give other developers (or anyone that visits this repository) an overview of what purpose this project solves, what it does (or will eventually do!), the tech involved in making it work, and how other developers can get access to the code and how they can make modifications and even contribute to the existing project.
-
-We managed to achieve this by creating a simple Markdown file and using some basic formatting syntax! This tiny amount of syntax allowed us to create headers of different sizes, bold and italic text, create lists (both ordered and unordered) with sublists, create links, and stylized code areas.
-
- COMPLETED CODE
-The code for this lesson can be found at https://github.com/Code-Institute-Org/full_stack_solutions/tree/master/Stream-1/angular-todo/markdown
-
-
- ADDITIONAL PERSPECTIVES FROM PEOPLE WE LIKE
-
-Markdown Cheatsheet
-PREVIOUS UNITNEXT UNIT
