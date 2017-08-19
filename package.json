@@ -1,0 +1,27 @@
+{
+  "name": "destinychildcollections",
+  "version": "1.0.0",
+  "description": "music",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mauya/DestinyChild_Collections.git"
+  },
+  "keywords": [
+    "music",
+    "collection",
+    "desyiny",
+    "child",
+    "music",
+    "group"
+  ],
+  "author": "SKadungure",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mauya/DestinyChild_Collections/issues"
+  },
+  "homepage": "https://github.com/Mauya/DestinyChild_Collections#readme"
+}
