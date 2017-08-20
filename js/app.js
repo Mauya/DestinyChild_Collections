@@ -1,14 +1,20 @@
-angular.module('DCCapp', ['ngRoute', 'RouteControllers']);
+var app = angular.module('DCCapp', 
+	['ngRoute', 
+	'RouteControllers'
+	]);
  
-angular.module('DCCapp').config(function($locationProvider, $routeProvider) {
-    $locationProvider.html5Mode(true);
- 
-    $routeProvider.when('/', {
+app.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
+    $routeProvider
+ 		.when('/', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/accounts/register', {
-        templateUrl: 'templates/register.html',
-        controller: 'RegisterController'
-    });
-});
+    // .when('/accounts/register', {
+    //     templateUrl: 'templates/register.html',
+    //     controller: 'RegisterController'
+    // });
+    .otherwise({
+        redirectTo: '/'
+    })
+    $locationProvider.html5Mode(true);
+}]);
