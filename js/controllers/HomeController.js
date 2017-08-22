@@ -3,11 +3,11 @@ angular.module('RouteControllers', [])
         $scope.title = "Destiny's Child Collections!";
         $scope.band = [ 
         	{
-		    	img: 'imgs/home/himg5.jpg',
+		    	img: 'imgs/home/himg6.jpg',
 		    	caption: 'Strong women survivor'
 		    },
 		    {
-		    	img: '/imgs/home/himg6.jpg',
+		    	img: '/imgs/home/himg5.jpg',
 		    	caption: 'Something is ...'
 		    },
 		    {

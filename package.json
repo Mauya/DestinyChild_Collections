@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Mauya/DestinyChild_Collections/issues"
   },
-  "homepage": "https://github.com/Mauya/DestinyChild_Collections#readme"
+  "homepage": "https://github.com/Mauya/DestinyChild_Collections#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
 }
