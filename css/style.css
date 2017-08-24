@@ -13,6 +13,10 @@ body{
 	padding:2px;
 	text-align: center;
 }
+#Owner{
+	font-family: cursive Arial;
+}
+
 ul{
 	list-style: none;
 }	

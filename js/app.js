@@ -9,12 +9,20 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-    // .when('/accounts/register', {
-    //     templateUrl: 'templates/register.html',
-    //     controller: 'RegisterController'
-    // });
-    .otherwise({
-        redirectTo: '/'
+        .when('/about', {
+            templateUrl: 'templates/about.html',
+            controller: 'AboutController'
+        })
+        .when('/gallery', {
+        templateUrl: 'templates/about.html',
+        controller: 'GalleryController'
     })
-    $locationProvider.html5Mode(true);
+        .when('/contact', {
+        templateUrl: 'templates/about.html',
+        controller: 'ContactController'
+    })
+        .otherwise({
+            redirectTo: '/'
+        })
+        $locationProvider.html5Mode(true);
 }]);
