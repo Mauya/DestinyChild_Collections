@@ -1,11 +1,20 @@
 /*index page style */
 body{
-	background-image: url("/imgs/home/himg.jpg");
+	background-image: url("/imgs/home/himg2.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
 	margin:auto;
 	width: 90%;
+	font-family: Arial sans-serif;
+	font-size: 12px;
+}
+.navbar-brand{
+	text-transform: uppercase;
+	font-weight:bold;
+	color:#fff;
 }
 .footer{
-	background: #333333;
+	background: #333;
 	position: absolute;
 	right: 5px;
 	bottom: 0;
@@ -22,6 +31,9 @@ ul{
 }	
 ul li{
 	display: inline;
+	font-size: 20px;
+	font-weight: bolder;
+	color: #fff;
 }
 .tag{
 	margin: auto 10px;
@@ -63,8 +75,8 @@ ul li{
 }
 /* home page syles */
 h1{
-	font-family: 'Lobster', cursive;
-	font-size: 58px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 54px;
 	color:#fff;
 	text-align: center;
 }
@@ -77,6 +89,7 @@ h5{
 	text-align:center;
 }
 .img-rounded{
+	background-color: #eee;
 	width: 300px;
 	height:240px;
 }
@@ -88,6 +101,7 @@ ul.tabs{
 	list-style: none;
 	height:45px;
 	direction: ltr;
+	color:#fff;
 }
 ul.tabs li {
   display: block;
@@ -95,13 +109,29 @@ ul.tabs li {
   cursor: pointer;
   padding: 0px 21px;
   margin: 0px 5px 5px 0px;
-  height: 31px;
+  height: 40px;
   line-height: 31px;
-  border: 1px solid #ccc;
-  border-left: 5px solid #bf94c7;
+  border-radius: 6px;
+  border-left: 5px solid #ff0000;
+  background-color: #000;
   overflow: hidden;
   position: relative;
 }
 .tabs_last{
 	border-left: 1px solid #333;
+}
+.jumbotron{
+	background-color: #737373;
+	color:#000;
+	font-size: 12px;
+}
+.tabs>li>a:hover{
+	cursor:pointer;
+	background: #ccc;
+}
+img .img-thumbnail{
+	border:1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	width: 150px;
 }
