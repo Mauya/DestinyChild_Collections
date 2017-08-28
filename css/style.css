@@ -16,9 +16,9 @@ body{
 .footer{
 	background: #333;
 	position: absolute;
-	right: 5px;
+	right: 0;
 	bottom: 0;
-	left: 5px;
+	left: 0;
 	padding:2px;
 	text-align: center;
 }

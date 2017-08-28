@@ -1,6 +1,6 @@
-var app = angular.module('DCCapp', 
+var app = angular.module('DCCapp',
 	['ngRoute', 
-	'RouteControllers'
+	'RouteControllers',
 	]);
  
 app.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
