@@ -1,6 +1,9 @@
 var app = angular.module('DCCapp',
 	['ngRoute', 
 	'RouteControllers',
+    'ngAnimate',
+    'ngTouch',
+    'ui.bootstrap'
 	]);
  
 app.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
@@ -13,9 +16,9 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
             templateUrl: 'templates/about.html',
             controller: 'AboutController'
         })
-        .when('/gallery', {
-        templateUrl: 'templates/about.html',
-        controller: 'GalleryController'
+        .when('/collection', {
+        templateUrl: 'templates/collection.html',
+        controller: 'CollectionController'
     })
         .when('/contact', {
         templateUrl: 'templates/about.html',

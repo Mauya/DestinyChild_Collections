@@ -86,7 +86,6 @@ h3{
 }
 h5{
 	color:#fff;
-	text-align:center;
 }
 .img-rounded{
 	background-color: #eee;
@@ -135,3 +134,29 @@ img .img-thumbnail{
 	padding: 5px;
 	width: 150px;
 }
+/* collection page */
+
+#button{
+	background-color: #ff0000;
+	border:none;
+	color:#000000;
+	width:250px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#slides_control > div{
+  height: 200px;
+}
+img.gifs{
+  margin:auto;
+  width: 400px;
+}
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}
+
+
