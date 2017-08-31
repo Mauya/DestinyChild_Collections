@@ -1,10 +1,11 @@
-var app = angular.module('DCCapp',
-	['ngRoute', 
-	'RouteControllers',
-    'ngAnimate',
-    'ngTouch',
-    'ui.bootstrap'
-	]);
+var app = angular.module('bandApp', 
+  ['ngRoute',
+   'RouteControllers',
+   'ngAnimate', 
+   'ngTouch', 
+   'ui.bootstrap'
+  ]);
+
  
 app.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
