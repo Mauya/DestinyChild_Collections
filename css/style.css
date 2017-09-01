@@ -14,7 +14,7 @@ body{
 	color:#fff;
 }
 .footer{
-	background: #333;
+	background: #660000;
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -82,7 +82,8 @@ h1{
 }
 h3{
 	color:#fff;
-	text-align:center;
+	font-family: cursive, sans-serif;
+	font-weight: bolder;
 }
 h5{
 	color:#fff;
@@ -91,6 +92,17 @@ h5{
 	background-color: #eee;
 	width: 300px;
 	height:240px;
+}
+.buttonModal{
+	background-color: #cc0000;
+	border:none;
+	border-radius:6px;
+	color:#fff;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 25px;
+	text-align: center;
+	width: 200px;
 }
 /* about page styling */
 ul.tabs{
@@ -137,11 +149,11 @@ img .img-thumbnail{
 /* collection page */
 
 #button{
-	background-color: #ff0000;
+	background-color: #cc0000;
 	border:none;
-	color:#000000;
+	color:#fff;
 	width:250px;
-	font-size: 20px;
+	font-size: 26px;
 	font-weight: bold;
 }
 #slides_control > div{
