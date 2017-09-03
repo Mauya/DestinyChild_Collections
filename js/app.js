@@ -1,4 +1,4 @@
-var app = angular.module('bandApp', 
+var app = angular.module('bandApp',
   ['ngRoute',
    'RouteControllers',
    'ngAnimate', 
@@ -16,15 +16,15 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         .when('/about', {
             templateUrl: 'templates/about.html',
             controller: 'AboutController'
-        })
+    })
         .when('/collection', {
         templateUrl: 'templates/collection.html',
         controller: 'CollectionController'
     })
         .when('/contact', {
-        templateUrl: 'templates/about.html',
+        templateUrl: 'templates/contact.html',
         controller: 'ContactController'
-    })
+    })     
         .otherwise({
             redirectTo: '/'
         })

@@ -1,4 +1,7 @@
 /*index page style */
+html{
+	margin: 0;
+}
 body{
 	background-image: url("/imgs/home/himg2.jpg");
 	background-size: 100%;
@@ -7,6 +10,8 @@ body{
 	width: 90%;
 	font-family: Arial sans-serif;
 	font-size: 12px;
+	color:#fff;
+	overflow-y: scroll;
 }
 .navbar-brand{
 	text-transform: uppercase;
@@ -172,3 +177,47 @@ img.gifs{
 }
 
 
+/* contact Page style" */
+.contact{
+	color: #fff;
+	font-size: 16px;
+	margin-right: 20px;
+}
+.contactForm input{
+	width:80%;
+	padding:10px 10px;
+	margin:5px 0;
+	display: inline-block;
+	border:1px solid #333;
+	border-radius: 6px;
+}
+.contactForm label{
+	color:#fff;
+	font-size: 20px;
+}
+textarea{
+	width:80%;
+	height:100px;
+	padding:10px 12px;
+	border-radius:6px;
+	box-sizing: border-box;
+	resize: none;
+}
+input [type=submit] {
+    width: 20%;
+    background-color: #cc0000;
+    color: #fff;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+	background-color: #999;
+}
+input.ng-invalid.ng-dirty,
+textarea.ng-invalid.ng-dirty{
+	border-color: red;
+	box-shadow: 0 0 4px red;
+}

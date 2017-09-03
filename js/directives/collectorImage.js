@@ -1,8 +1,8 @@
-app.directive('collectorImage', function() { 
+app.directive('collectorInfo', function() { 
   return { 
     restrict: 'E', 
     scope: { 
-      slide: '=' 
+      info: '=' 
     }, 
     templateUrl: 'js/directives/collectorImage.html' 
   }; 

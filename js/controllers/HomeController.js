@@ -1,5 +1,5 @@
 angular.module('RouteControllers', [])
-app.controller('HomeController', function($scope) {
+app.controller('HomeController',  function($scope) {
     $scope.title = "Destiny's Child Collections!";
     $scope.band = [ 
     	{
@@ -15,4 +15,12 @@ app.controller('HomeController', function($scope) {
 	    	caption: 'Brown eyes'
 	    }
 	];
+
+	 $scope.header = '';
+	 $scope.body = '';
+	 $scope.footer = '';
+
+	 $scope.myRightButton = function(took){
+	 	alert('first function call');
+	 }
 });

@@ -4,9 +4,13 @@ app.directive('modalForm', function() {
     transclude: true,
     replace: true,
     scope: { 
-      visible: '=',
-       
+      title: "=modalTitle",
+      header: "=modalHeader",
+      body: "=modalBody",
+      footer: "=modalFooter",
+      handler: "collectorForm",  
     }, 
+
     templateUrl: 'js/directives/modal-form.html' 
   }; 
 });
