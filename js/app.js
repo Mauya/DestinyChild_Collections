@@ -13,7 +13,7 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-        .when('/', {
+        .when('/modal', {
         templateUrl: 'templates/modal-form.html',
         controller: 'ModalController'
     })
@@ -24,6 +24,10 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         .when('/gallery', {
         templateUrl: 'templates/gallery.html',
         controller: 'GalleryController'
+    })
+         .when('/music', {
+        templateUrl: 'templates/music.html',
+        controller: 'MusicController'
     })
         .when('/contact', {
         templateUrl: 'templates/contact.html',

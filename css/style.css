@@ -247,3 +247,10 @@ textarea.ng-invalid.ng-dirty{
 	border-color: red;
 	box-shadow: 0 0 4px red;
 }
+/* Music page style */
+.container{
+	overflow: hidden;
+}
+.albumList{
+	display: inline-block;
+}

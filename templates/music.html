@@ -1,0 +1,9 @@
+<div class="container">
+	<ul class="albumList">
+		<li class="list" ng-repeat="album in albums">
+			<img class="iconic" ng-src="{{album.img}}" alt="{{album.name}}">
+			<h3 class="title">{{album.name}}</h3>
+			<p class ="buy"><a href="{{album.buy}}"></a>Buy</p>
+		</li>	
+	</ul>
+</div>
