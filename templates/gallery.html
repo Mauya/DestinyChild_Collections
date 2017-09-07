@@ -1,0 +1,23 @@
+<h2>{{title1}}</h2>
+  <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+    <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+      <img ng-src="{{slide.image}}"  ng-show = "isActive($index)"/>
+      <div class="carousel-caption">
+        <h4>{{slide.id}}</h4>
+      </div>
+    </uib-slide>
+  </uib-carousel>
+  <div style="clear: both"></div>
+
+<div class = "thumbsShell">
+  <div class = "thumbsWrapper"> 
+    <ul class="imageList"> <!-- below iterate all images and dispaly as thumbs -->
+      <li ng-repeat="slide in slides" ng-class="{'active':isActive($index)}">
+        <div class=thumbwrapper>
+          <a href="" ng-click="showSlide($index)"></a>
+          <img class="thumbnail" ng-src="{{slide.image}}" title="{{slide.id}}"/>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,61 +1,38 @@
-app.controller('CollectionController', ['$scope', function($scope) {
+app.controller('GalleryController', ['$scope', function($scope) {
   $scope.slides = [ 
 	  { 
-	    image: 'imgs/collectorImg/cimag1.jpg', 
+	  	id: 1,
+	    image: 'imgs/gallery/gimag1.jpg', 
 	  },
 	  { 
-	    image: 'imgs/collectorImg/cimag2.jpg', 
+	  	id: 2,
+	    image: 'imgs/gallery/gimag2.jpg', 
 	  },
 	  { 
-	    image: 'imgs/collectorImg/cimag3.jpg', 
+	  	id: 3,
+	    image: 'imgs/gallery/gimag3.jpg', 
 	  },
 	  { 
-	    image: 'imgs/collectorImg/cimag4.jpg', 
+	  	id: 4,
+	    image: 'imgs/gallery/gimag4.jpg', 
+	  },
+	  { id: 5,
+	    image: 'imgs/gallery/gimag5.jpg', 
+	  },
+	  { id: 6,
+	    image: 'imgs/gallery/gimag6.jpg', 
 	  },
 	  { 
-	    image: 'imgs/collectorImg/cimag5.jpg', 
+	  	id: 7,
+	    image: 'imgs/gallery/gimag7.jpg', 
 	  },
 	  { 
-	    image: 'imgs/collectorImg/cimag6.jpg', 
+	  	id: 8,
+	    image: 'imgs/gallery/gimag8.jpg', 
 	  },
 	  { 
-	    image: 'imgs/collectorImg/cimag7.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag8.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag9.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag10.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag11.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag12.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag13.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag14.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag15.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag16.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag17.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag18.jpg', 
-	  },
-	  { 
-	    image: 'imgs/collectorImg/cimag2.jpg', 
-	  }  
+	  	id: 9,
+	    image: 'imgs/gallery/gimag9.jpg', 
+	  } 
 	];
 }]);

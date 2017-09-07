@@ -1,5 +1,6 @@
 angular.module('RouteControllers', [])
 app.controller('AboutController', ['$scope', function($scope) {
+    $scope.profileTitle = 'Members Profile';
     $scope.tabContent = [
     	{
     		name: 'Kelly Rowland',
@@ -17,14 +18,16 @@ app.controller('AboutController', ['$scope', function($scope) {
     		bio: "Born in 1980, Michelle Williams started singing as a child. She performed gospel music for much of her early life. In 1999, Williams became a backup singer for R&B artist Monica. She then joined Destiny's Child the following year. With Destiny's Child, Williams made such hits as 'Survivor' and 'Bootylicious.' The group broke up in 2005, but they have reunited several times since. Williams has released several solo albums as well, including 2008's Unexpected. She performed at the Super Bowl with Destiny's Child in 2013."
     	}
     	];
-        $scope.tab=1;
 
-        $scope.setTab=function(newTab){
-            $scope.tab = newTab;            
-        };
-
-    $scope.isSet = function(tabNum){
-        return $scope.tab === tabNum;
-    };
+        $scope.select=function(contentTab){
+            angular.forEach(tabContent, function(contentTab){
+                contentTab.selected =false;
+            });
+            contentTab.selected = true;            
+        }
+        this.addPane = function(contentTab){
+            if(tabContent.length == 0) $scope.select(contentTab);
+            tabContent.push(contentTab)
+        }
             
 }]);

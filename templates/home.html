@@ -3,8 +3,11 @@
 </div>
 <div class="row">
 	<h3 class="col-sm-4 col-sm-offset-2">Love R & B, Love Music</h3>
-	<button class="colsm-2 col-sm-offset-2 buttonModal" data-toggle="modal" data-target="#{{modal1}}" ng-click="data-ng-click">Join Collectors</button>
-	<modal collectorForm="modal1" modal-body="body" modal-footer="footer" modal-header="header" data-ng-click-right-button="myRightButton()"></modal>
+	<div class="col-sm-2 col-sm-offset-2 buttonModal">
+        <div class="page-body">
+            <button class="btn btn-primary" ng-click="showForm()">C</button>
+        </div>
+	</div>
 </div>
 <div class="row">
 	<div class="col-sm-4" ng-repeat="b in band">

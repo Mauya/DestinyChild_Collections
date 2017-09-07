@@ -85,6 +85,10 @@ h1{
 	color:#fff;
 	text-align: center;
 }
+h2{
+	text-align: center;
+	font-family: cursive, sans-serif;
+}
 h3{
 	color:#fff;
 	font-family: cursive, sans-serif;
@@ -151,32 +155,54 @@ img .img-thumbnail{
 	padding: 5px;
 	width: 150px;
 }
-/* collection page */
-
-#button{
-	background-color: #cc0000;
-	border:none;
-	color:#fff;
-	width:250px;
-	font-size: 26px;
-	font-weight: bold;
+/* gallery page */
+uib-carousel{
+	background-color: #333;
+	border-radius: 6px;
+	width: 600px;
+	padding:15px;
+	margin: 10px 0;
 }
-#slides_control > div{
-  height: 200px;
+uib-slide {
+	text-align: center;
+	overflow: hidden;
+	color: #fff;
+	position: relative;
+	display:block;
+	margin: auto;
+	cursor: pointer;
+	border: 2px solid #fff;
+	bottom: 10px;
+	left: 50px;
+	width:600%;
 }
-img.gifs{
-  margin:auto;
-  width: 400px;
+.thumbsShell{
+	background-color: #333;
+	width: 400px;
+	padding:10px;
+	border-radius: 6px;
 }
-#slides_control {
-  position:absolute;
-  width: 400px;
-  left:50%;
-  top:20px;
- margin-left:-200px;
+.thumbsWrapper{
+	overflow-x: scroll;
+	width: 394px;
+	height:60px;
+	margin:10px auto;
 }
-
-
+.thumbsWrapper ul li{
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	height: 30px;
+	width: 50px;
+}
+.imageList{
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+.thumbwrapper{
+	height: 60px;
+}
 /* contact Page style" */
 .contact{
 	color: #fff;

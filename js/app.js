@@ -3,7 +3,7 @@ var app = angular.module('bandApp',
    'RouteControllers',
    'ngAnimate', 
    'ngTouch', 
-   'ui.bootstrap'
+   'ui.bootstrap',
   ]);
 
  
@@ -13,13 +13,17 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
+        .when('/', {
+        templateUrl: 'templates/modal-form.html',
+        controller: 'ModalController'
+    })
         .when('/about', {
             templateUrl: 'templates/about.html',
             controller: 'AboutController'
     })
-        .when('/collection', {
-        templateUrl: 'templates/collection.html',
-        controller: 'CollectionController'
+        .when('/gallery', {
+        templateUrl: 'templates/gallery.html',
+        controller: 'GalleryController'
     })
         .when('/contact', {
         templateUrl: 'templates/contact.html',

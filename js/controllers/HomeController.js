@@ -15,7 +15,7 @@ app.controller('HomeController',  function($scope) {
 	    	caption: 'Brown eyes'
 	    }
 	];
-
+	 $scope.modalTitle = "Join DC Collectors"
 	 $scope.header = '';
 	 $scope.body = '';
 	 $scope.footer = '';
