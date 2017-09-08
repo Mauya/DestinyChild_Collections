@@ -1,4 +1,3 @@
-angular.module('RouteControllers', [])
 app.controller('GalleryController', ['$scope', function($scope) {
   $scope.title1 = "Destiny's Child Photo Gallery";
   $scope.myInterval = 5000;

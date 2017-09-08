@@ -1,38 +1,12 @@
-app.controller('GalleryController', ['$scope', function($scope) {
-  $scope.slides = [ 
-	  { 
-	  	id: 1,
-	    image: 'imgs/gallery/gimag1.jpg', 
-	  },
-	  { 
-	  	id: 2,
-	    image: 'imgs/gallery/gimag2.jpg', 
-	  },
-	  { 
-	  	id: 3,
-	    image: 'imgs/gallery/gimag3.jpg', 
-	  },
-	  { 
-	  	id: 4,
-	    image: 'imgs/gallery/gimag4.jpg', 
-	  },
-	  { id: 5,
-	    image: 'imgs/gallery/gimag5.jpg', 
-	  },
-	  { id: 6,
-	    image: 'imgs/gallery/gimag6.jpg', 
-	  },
-	  { 
-	  	id: 7,
-	    image: 'imgs/gallery/gimag7.jpg', 
-	  },
-	  { 
-	  	id: 8,
-	    image: 'imgs/gallery/gimag8.jpg', 
-	  },
-	  { 
-	  	id: 9,
-	    image: 'imgs/gallery/gimag9.jpg', 
-	  } 
-	];
-}]);
+app.controller("CollectionController", function($Scope){
+    var collections = [
+    {
+    title:"Collections",
+      gallery:[
+        {Photo:"Gallery"},
+        {Audio:"Music"},
+        {Fashion:"Fashion"}
+    ]
+}]
+  $scope.collections=collections;
+})

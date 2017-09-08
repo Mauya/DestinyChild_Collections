@@ -113,6 +113,14 @@ h5{
 	text-align: center;
 	width: 200px;
 }
+input .form-control{
+	width: 80%
+	padding:10px 15px;
+	margin:8px 0;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
 /* about page styling */
 ul.tabs{
 	margin:0;
@@ -136,12 +144,13 @@ ul.tabs li {
   background-color: #000;
   overflow: hidden;
   position: relative;
+  color:#fff;
 }
 .tabs_last{
 	border-left: 1px solid #333;
 }
 .jumbotron{
-	background-color: #737373;
+	background-color: #330014;
 	color:#000;
 	font-size: 12px;
 }

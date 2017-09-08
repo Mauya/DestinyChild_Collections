@@ -1,13 +1,56 @@
 <div>
 	<h1><strong>{{title}}</strong></h1>
 </div>
-<div class="row">
-	<h3 class="col-sm-4 col-sm-offset-2">Love R & B, Love Music</h3>
-	<div class="col-sm-2 col-sm-offset-2 buttonModal">
-        <div class="page-body">
-            <button class="btn btn-primary" ng-click="showForm()">C</button>
-        </div>
+<div class = "container_modal">
+	<div class="row">
+		<h3 class="col-sm-4 col-sm-offset-2">Love R & B, Love Music</h3>
+		<div class="col-sm-2 col-sm-offset-2">
+	        <button class="buttonModal" data-target="#collectorModal" data-toggle="modal">Join Collectors</button>
+	    </div>
 	</div>
+	<div class="modal fade" data-keyboard="false" data-backdrop="static" id="collectorModal" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">LogIn</h4>	
+				</div>
+				<div class="modal-body">
+					<form name="form.userForm" ng-submit="submitForm()" novalidate>
+				        <div class="form-group">
+				            <label for="inputUsername" class="control-label">Username:</label>
+				            <input type="text" name="username" class="form-control" ng-model="user.username" ng-minlength="3" ng-maxlength="8" placeholder="Enter username" required />
+				            <p ng-show="form.userForm.username.$error.minlength" class="help-block">Username is too short.</p>
+				            <p ng-show="form.userForm.username.$error.maxlength" class="help-block">Username is too long.</p>
+				        </div>
+				        <div class="form-group">
+				            <label for="inputEmail" class="control-label">Email:</label>
+				            <input type="email" name="email" class="form-control" ng-model="email" placeholder="Enter your Email" required />
+				            <p ng-show="form.userForm.email.$invalid && !form.userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+				        </div>
+				        <div class="form-group">
+				            <label for="inputPassword" class="control-label">Password:</label>
+				            <input type="password" name="password" class="form-control" ng-model="password" placeholder="Enter password" valid-password />
+				            <p ng-show="!!myform.password.$error.isBlank">Password Required.</p>
+                			<p ng-show="!!myform.password.$error.isWeak">Must contain one upper &amp; lower case letter and a non-letter (number or symbol.)</p> 
+                			<p ng-show="!!myform.password.$error.invalidLen">Must be 8-20 characters.</p>
+				        </div>
+				        <div class="form-group">
+				            <label for="password_c" class="control-label">Confirm Password:</label>
+				            <input type="password" name="password_c" class="form-control" ng-model="password_c" placeholder="Confirm password" valid-password_c />
+				            <p ng-show="!!myform.password_c.$error.isBlank">Confirmation Required.</p>
+                			<p ng-show="!!myform.password_c.$error.noMatch">Passwords don't match.</p>
+				        </div>
+				    </form>
+				    <div class="modal-footer">
+				        <button type="submit" class="btn btn-primary" ng-disabled="form.userForm.$invalid">OK</button>
+				        <button class="btn btn-danger" ng-click="cancel()" data-dismiss="modal">Cancel</button>
+				    </div>
+				</div>
+			</div>		
+		</div>	
+	</div>
+</div>
 </div>
 <div class="row">
 	<div class="col-sm-4" ng-repeat="b in band">

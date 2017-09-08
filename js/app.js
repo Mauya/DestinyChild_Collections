@@ -6,21 +6,20 @@ var app = angular.module('bandApp',
    'ui.bootstrap',
   ]);
 
- 
 app.config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
  		.when('/', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-        .when('/modal', {
-        templateUrl: 'templates/modal-form.html',
-        controller: 'ModalController'
-    })
         .when('/about', {
             templateUrl: 'templates/about.html',
             controller: 'AboutController'
     })
+        .when('/collections', {
+        templateUrl: 'templates/collections.html',
+        controller: 'CollectionsController'
+    })  
         .when('/gallery', {
         templateUrl: 'templates/gallery.html',
         controller: 'GalleryController'
