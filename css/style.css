@@ -3,29 +3,61 @@ html{
 	margin: 0;
 }
 body{
-	background-image: url("/imgs/home/himg2.jpg");
+	background-image: url("/imgs/home/himg0.jpg");
 	background-size: 100%;
-	background-repeat: no-repeat;
-	margin:auto;
+	background-repeat: repeat;
+	margin:0;
 	width: 90%;
 	font-family: Arial sans-serif;
 	font-size: 12px;
-	color:#fff;
-	overflow-y: scroll;
+	color:#000;
+	margin-bottom: 50px;
+}
+.navbar-default{
+	background-color: #000033;
+	color: #fff;
+	font-size: 30px;
 }
 .navbar-brand{
 	text-transform: uppercase;
 	font-weight:bold;
 	color:#fff;
 }
+/*Player styling*/
+.audio-footer{
+	position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background:#6cf;
+}
+audio{
+	text-align: center;
+	width: 80%;
+}
+#playlist{
+	list-style: none;
+	display: hidden;
+}
+#playlist li a{
+	color: #000;
+	text-decoration: none;
+}
+#playlist .current-song a{
+	color:#0000cc;
+}
+#playlist .hide{
+	display:none;
+}
 .footer{
-	background: #660000;
-	position: absolute;
+	background: #000033;
+	position: fixed;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	padding:2px;
 	text-align: center;
+	color: #fff;
 }
 #Owner{
 	font-family: cursive Arial;
@@ -80,9 +112,9 @@ ul li{
 }
 /* home page syles */
 h1{
-	font-family: 'Rubik', sans-serif;
+	font-family: cursive, sans-serif;
 	font-size: 54px;
-	color:#fff;
+	color:#000;
 	text-align: center;
 }
 h2{
@@ -90,32 +122,32 @@ h2{
 	font-family: cursive, sans-serif;
 }
 h3{
-	color:#fff;
 	font-family: cursive, sans-serif;
 	font-weight: bolder;
+	text-align: center;
 }
 h5{
 	color:#fff;
 }
 .img-rounded{
-	background-color: #eee;
+	background-color: #6600ff;
 	width: 300px;
 	height:240px;
 }
 .buttonModal{
-	background-color: #cc0000;
 	border:none;
 	border-radius:6px;
-	color:#fff;
+	color:#000;
 	font-size: 20px;
 	font-weight: bold;
 	padding: 10px 25px;
 	text-align: center;
 	width: 200px;
+	margin-top:60px;
 }
 input .form-control{
-	width: 80%
-	padding:10px 15px;
+	width: 80%;
+	padding: 10px 15px;
 	margin:8px 0;
 	display: block;
 	border: 1px solid #ccc;
@@ -140,23 +172,23 @@ ul.tabs li {
   height: 40px;
   line-height: 31px;
   border-radius: 6px;
-  border-left: 5px solid #ff0000;
-  background-color: #000;
+  border-left: 5px solid #000;
+  background-color: #666;
   overflow: hidden;
   position: relative;
-  color:#fff;
+ 
 }
 .tabs_last{
 	border-left: 1px solid #333;
 }
 .jumbotron{
-	background-color: #330014;
-	color:#000;
-	font-size: 12px;
+	background-color: #000d33;
+	color:#ffffff;
+	font-size: 10px;
 }
 .tabs>li>a:hover{
 	cursor:pointer;
-	background: #ccc;
+	background: #eee;
 }
 img .img-thumbnail{
 	border:1px solid #ddd;
@@ -164,7 +196,21 @@ img .img-thumbnail{
 	padding: 5px;
 	width: 150px;
 }
-/* gallery page */
+/*Music Page styling */
+.album{
+	overflow: hidden;
+    position:relative;
+    display:inline-block;
+    width: 23%;
+    margin-top:70px;
+    margin-bottom: 10px;
+   }
+.albumList li p{
+	font-size: 14px;
+	font-weight: lighter;
+	color:#000;
+}
+/* Photo page */
 uib-carousel{
 	background-color: #333;
 	border-radius: 6px;
@@ -214,7 +260,6 @@ uib-slide {
 }
 /* contact Page style" */
 .contact{
-	color: #fff;
 	font-size: 16px;
 	margin-right: 20px;
 }
@@ -227,7 +272,7 @@ uib-slide {
 	border-radius: 6px;
 }
 .contactForm label{
-	color:#fff;
+	color:#000;
 	font-size: 20px;
 }
 textarea{
@@ -238,20 +283,7 @@ textarea{
 	box-sizing: border-box;
 	resize: none;
 }
-input [type=submit] {
-    width: 20%;
-    background-color: #cc0000;
-    color: #fff;
-    padding: 10px 10px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-input[type=submit]:hover{
-	background-color: #999;
-}
-input.ng-invalid.ng-dirty,
+button.ng-invalid.ng-dirty,
 textarea.ng-invalid.ng-dirty{
 	border-color: red;
 	box-shadow: 0 0 4px red;

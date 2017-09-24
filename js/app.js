@@ -16,17 +16,17 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
             templateUrl: 'templates/about.html',
             controller: 'AboutController'
     })
-        .when('/collections', {
-        templateUrl: 'templates/collections.html',
-        controller: 'CollectionsController'
-    })  
-        .when('/gallery', {
-        templateUrl: 'templates/gallery.html',
-        controller: 'GalleryController'
-    })
-         .when('/music', {
+        .when('/music', {
         templateUrl: 'templates/music.html',
         controller: 'MusicController'
+    })  
+        .when('/video', {
+        templateUrl: 'templates/video.html',
+        controller: 'VideoController'
+    })
+         .when('/photos', {
+        templateUrl: 'templates/photos.html',
+        controller: 'PhotoController'
     })
         .when('/contact', {
         templateUrl: 'templates/contact.html',

@@ -1,4 +1,4 @@
-app.controller('GalleryController', ['$scope', function($scope) {
+app.controller('PhotosController', ['$scope', function($scope) {
   $scope.title1 = "Destiny's Child Photo Gallery";
   $scope.myInterval = 5000;
   $scope.noWrapSlides=false;

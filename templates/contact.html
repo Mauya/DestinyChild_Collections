@@ -58,12 +58,12 @@
           </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="form-group" ng-class="{ 'form-error': contactform.inputSubject.$invalid && submitted }">
             <label for="inputSubject" class="col-lg-2 control-label">Subject: </label>
             <input ng-model="formData.inputSubject" type="text" class="form-control" id="inputSubject" name="inputSubject" ng-model="formSubject" placeholder="Subject" required/>
           </div>
-        </div>
+        </div> -->
 
         <div class="row form-group">
         <label for="inputMessage" class="col-lg-2 control-label">Message: </label>
@@ -71,7 +71,7 @@
         </div>
         <!-- SUBMIT BUTTON -->
         <div class="form-group">
-        <input type="submit" name="submit" type="submit" class=" col-lg offset-2 col-lg-5 btn btn-default btn-md" ng-click="processForm()" ng-disabled="contactForm.$invalid" value="send" />
+        <button class="btn btn-primary" ng-click="processForm()" ng-disabled="contactForm.$invalid">Button</button>
       </div>
     </form>
   </div>
