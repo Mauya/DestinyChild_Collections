@@ -3,15 +3,15 @@
   <div class="row">
   	<div class="col-sm-2">
   		<ul class="tabs" role="tabList">
-       	<li ng-class="{active: active == tab.name}" ng-repeat="tab in tabContent" rel="{{tab.name}}">
-          	<a ng-click="setTab">{{tab.name}}</a>
+       	<li ng-class="{active: isActiveTab = tab.name}" ng-repeat="tab in tabContent" rel="{{tab.name}}">
+          	<a href ng-click="onClickTab(tab)">{{tab.name}}</a>
        	</li>
      	</ul>
   	</div>
     <div class="col-sm-10">
   		<div class="jumbotron">
-        <ul class = "content">
-         	<li ng-class= "{active:selected}" ng-repeat="tab in tabContent">
+        <ul id="mainView" class = "currentTab">
+         	<li ng-show= "{active:isActiveTab === tab.name}" ng-repeat="tab in tabContent">
             <img ng-src="{{tab.photo}}" alt ="{{tab.name}}" class="img-thumbnail">
            	 <span><h5>{{tab.name}}</h5></span>
             	<p>{{tab.bio}}</p>

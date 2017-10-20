@@ -26,7 +26,7 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
     })
          .when('/photos', {
         templateUrl: 'templates/photos.html',
-        controller: 'PhotoController'
+        controller: 'PhotosController'
     })
         .when('/contact', {
         templateUrl: 'templates/contact.html',

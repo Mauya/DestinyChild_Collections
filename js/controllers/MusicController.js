@@ -5,37 +5,31 @@ app.controller('MusicController', function($scope){
 		id: 0,
 		img: "imgs/albums/aimg1.jpg",
 		name: "Destiny's Child",
-		Year: 1998,
-		buy: "Buy"
+		Year: 1998
 	},
 	{
 		id:1,
 		img: "imgs/albums/aimg2.jpg",
 		name: "writing on the wall",
-		year: 1999,
-		buy: "Buy"
+		year: 1999
 	},
 	{
 		id: 2,
 		img: "imgs/albums/aimg3.jpg",
 		name: "Survivor",
-		year: 2001,
-		buy: "Buy"
+		year: 2001
 	},
 	{
 		id: 3,
 		img: "imgs/albums/aimg4.jpg",
 		name: "8 days of Christmas",
-		year: 2001,
-		buy: "Buy"
-
+		year: 2001
 	},
 	{
 		id: 4,
 		img: "imgs/albums/aimg5.jpg",
 		name: "Destiny Fulfilled",
-		year: 2004,
-		buy: "Buy"
+		year: 2004
 	},
   ];
 });

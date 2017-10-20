@@ -1,12 +1,9 @@
-<h1>{{albumTitle}}</h1>
-<div class="container">
-	<div class="row">
-		<ul class="albumList">
-			<li class="album" ng-repeat="album in albums">
-				<img class="iconic" ng-src="{{album.img}}" alt="{{album.name}}">
-				<p class="title">{{album.name}}</p>
-				<button class ="btn btn-primary btn-lg"><a href="{{album.buy}}"></a>Buy</button>
-			</li>	
-		</ul>
+
+<div class = "music-container">
+	<div class = "center">
+		<div class="music1" ng-repeat="album in albums">
+		  <music-info info="album"></music-info>
+		</div>
 	</div>
 </div>
+<br>

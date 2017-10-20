@@ -197,58 +197,68 @@ img .img-thumbnail{
 	width: 150px;
 }
 /*Music Page styling */
-.album{
-	overflow: hidden;
+.center{
+	margin: 20px auto;
+	width: 80%;
+}
+.music1{
     position:relative;
     display:inline-block;
     width: 23%;
-    margin-top:70px;
-    margin-bottom: 10px;
+    margin: 0;
+    padding:0;
    }
+
 .albumList li p{
 	font-size: 14px;
 	font-weight: lighter;
 	color:#000;
+	text-align: center;
 }
 /* Photo page */
+ uib-slide img {
+    bottom: 10px;
+    left: 1S0px;
+    cursor: pointer;
+    display: block;
+    border: 2px solid #fff;
+    position:absolute; 
+    overflow:hidden;
+    text-align:center;
+    overflow: hidden;
+    }
 uib-carousel{
-	background-color: #333;
+	background-color: #eee;
 	border-radius: 6px;
-	width: 600px;
+	width: 500px;
 	padding:15px;
-	margin: 10px 0;
+	margin: 30px 0;
 }
-uib-slide {
-	text-align: center;
-	overflow: hidden;
-	color: #fff;
-	position: relative;
-	display:block;
-	margin: auto;
-	cursor: pointer;
-	border: 2px solid #fff;
-	bottom: 10px;
-	left: 50px;
-	width:600%;
+uib-carousel img{
+	width:100%;
+	margin:auto;
+}
+.carousel-caption h4{
+	color: #fff !important;
 }
 .thumbsShell{
 	background-color: #333;
-	width: 400px;
-	padding:10px;
+	width: 80%;
+	padding: 5px;
+	margin:auto;
 	border-radius: 6px;
+	height: 67px;
 }
 .thumbsWrapper{
-	overflow-x: scroll;
-	width: 394px;
-	height:60px;
 	margin:10px auto;
+	width: 70%;
 }
 .thumbsWrapper ul li{
 	list-style: none;
 	display: inline-block;
 	position: relative;
-	height: 30px;
-	width: 50px;
+	height: 50px;
+	width: 70px;
 }
 .imageList{
 	display: block;

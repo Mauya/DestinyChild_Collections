@@ -18,7 +18,13 @@ app.controller('AboutController', ['$scope', function($scope) {
     		bio: "Born in 1980, Michelle Williams started singing as a child. She performed gospel music for much of her early life. In 1999, Williams became a backup singer for R&B artist Monica. She then joined Destiny's Child the following year. With Destiny's Child, Williams made such hits as 'Survivor' and 'Bootylicious.' The group broke up in 2005, but they have reunited several times since. Williams has released several solo albums as well, including 2008's Unexpected. She performed at the Super Bowl with Destiny's Child in 2013."
     	}
     ];
-    $scope.select = function(contentTab){
-        scope.selected = contentTab;
-        }
+
+    $scope.currentTab = {};
+    $scope.onClickTab = function(tab){
+        scope.currentTab = tab.name, tab.photo, tab.bio;
+    }
+
+    $scope.isActiveTab = function(content){
+        return content == $scope.currentTab;
+    }
 }]);
