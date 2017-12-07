@@ -28,6 +28,10 @@ app.config(['$routeProvider','$locationProvider', function ($routeProvider, $loc
         templateUrl: 'templates/photos.html',
         controller: 'PhotosController'
     })
+         .when('/fashion', {
+        templateUrl: 'templates/fashion.html',
+        controller: 'FashionController'
+    })
         .when('/contact', {
         templateUrl: 'templates/contact.html',
         controller: 'ContactController'
