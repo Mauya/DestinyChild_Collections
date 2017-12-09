@@ -1,23 +1,22 @@
 app.controller('VideoController', ['$scope', '$window', '$interval', function($scope, $window, $interval) {
     $scope.playlist = [
         {
-            videoSource = "video/Bootylicious.mp4",
-            titleDisplay = "Bootylicious",
-            description = "Bootylicious is about confidence in body image"
+            videoSource: "video:Bootylicious.mp4",
+            titleDisplay: "Bootylicious",
+            description: "Bootylicious is about confidence in body image"
         },
         {
-            videoSource = "video/Brown Eyes.mp4",
-            titleDisplay = "Brown Eyes",
-            description = " The story of beauty and love"
+            videoSource: "video:Brown Eyes.mp4",
+            titleDisplay: "Brown Eyes",
+            description: " The story of beauty and love"
         },
         {
-            videoSource = "video/Say My name.mp4",
-            titleDisplay = "Say My Name",
-            description = "Abour love and cheats"
+            videoSource: "video:Say My name.mp4",
+            titleDisplay: "Say My Name",
+            description: "Abour love and cheats"
         }
     ];
-    
-    $scope.videoDisplay = document.getElementById("VideoElement");
+        $scope.videoDisplay = document.getElementById("VideoElement");
     $scope.videoSource = $window.videoSource;
     $scope.titleDisplay = $window.titleDisplay;
     $scope.videoDescription = $window.videoDescription;
@@ -51,7 +50,7 @@ app.controller('VideoController', ['$scope', '$window', '$interval', function($s
         $scope.totalTime = 0;
         $scope.videoDisplay.addEventListener("timeupdate", $scope.updateTime, true);
         $scope.videoDisplay.addEventListener("loadedmetadata", $scope.updateData, true);
-    }
+    };
     
     $scope.updateTime = function(e) {
         if(!$scope.videoDisplay.seeking){
@@ -64,11 +63,11 @@ app.controller('VideoController', ['$scope', '$window', '$interval', function($s
                 $('#playBtn').children("span").toggleClass("glyphicon-pause", false);
             }
         }
-    }
+    };
     
     $scope.updateData = function(e) {
         $scope.totalTime = e.target.duration;
-    }
+    };
     
     $scope.updateLayout = function() {
         $scope.scrubTop = document.getElementById('progressMeterFull').offsetTop-2;
@@ -77,24 +76,24 @@ app.controller('VideoController', ['$scope', '$window', '$interval', function($s
         if(!$scope.$$phase) {
             $scope.$apply();
         }
-    }
+    };
     
     $scope.mouseMoving = function($event) {
         if($scope.isDragging){
             $("#thumbScrubber").offset({left:$event.pageX});
         }
-    }
+    };
 
     $scope.dragStart = function($event) {
         $scope.isDragging = true;
-    }
+    };
 
     $scope.dragStop = function($event) {
         if($scope.isDragging){
             $scope.videoSeek($event);
             $scope.isDragging = false;
         }
-    }
+    };
     
     
     $scope.videoSeek = function($event) {
@@ -102,26 +101,26 @@ app.controller('VideoController', ['$scope', '$window', '$interval', function($s
         var d = $scope.videoDisplay.duration;
         var s = Math.round($event.pageX / w * d);
         $scope.videoDisplay.currentTime = s;
-    }
+    };
     
     $scope.toggleDetails = function(){
-    	if($scope.showOptions){
-    		$scope.showOptions = false;
-    	}else{
-    		$scope.showOptions = true;
-    	}
-    }
+        if($scope.showOptions){
+            $scope.showOptions = false;
+        }else{
+            $scope.showOptions = true;
+        }
+    };
 
     $scope.videoSelected = function(i) {
-    	$scope.titleDisplay = $scope.playlist[i].titleDisplay;
-    	$scope.videoDescription = $scope.playlist[i].description;
-    	$scope.videoSource = $scope.playlist[i].videoSource;
-    	$scope.videoDisplay.load(scope.videoSource);
-    	$scope.videoPlaying = False;
-    	$("#playBtn").children("span").toggleClass(glyphicon-play, true);
-    	$("#playBtn").children("span").toggleClass(glyphicon-pause, false);
-    	$scope.showOptions = false;
-    }
+        $scope.titleDisplay = $scope.playlist[i].titleDisplay;
+        $scope.videoDescription = $scope.playlist[i].description;
+        $scope.videoSource = $scope.playlist[i].videoSource;
+        $scope.videoDisplay.load(scope.videoSource);
+        $scope.videoPlaying = False;
+        $("#playBtn").children("span").toggleClass(glyphicon-play, true);
+        $("#playBtn").children("span").toggleClass(glyphicon-pause, false);
+        $scope.showOptions = false;
+    };
     
     $scope.togglePlay = function() { 
         if($scope.videoDisplay.paused){
@@ -135,10 +134,10 @@ app.controller('VideoController', ['$scope', '$window', '$interval', function($s
             $('#playBtn').children("span").toggleClass("glyphicon-play", true);
             $('#playBtn').children("span").toggleClass("glyphicon-pause", false);
         }
-    }
+    };
     
     $scope.toggleMute = function() {
-        if($scope.videoDisplay.volume == 0.0){
+        if($scope.videoDisplay.volume ===0.0){
             $scope.videoDisplay.volume = 1.0;
             $('#muteBtn').children("span").toggleClass("glyphicon-volume-up", true);
             $('#muteBtn').children("span").toggleClass("glyphicon-volume-off", false);
@@ -147,7 +146,7 @@ app.controller('VideoController', ['$scope', '$window', '$interval', function($s
             $('#muteBtn').children("span").toggleClass("glyphicon-volume-up", false);
             $('#muteBtn').children("span").toggleClass("glyphicon-volume-off", true);
         }
-    }
+    };
     
     
     $scope.toggleFullscreen = function() {
@@ -161,14 +160,13 @@ app.controller('VideoController', ['$scope', '$window', '$interval', function($s
         }else if(v.msRequestFullscreen) {
             v.msRequestFullscreen();
         }
-    }
-    
+    };
     
     $scope.initPlayer();
     
 }]);
 
-videoApp.filter('time', function() {
+app.filter('time', function() {
     return function(seconds) {
         var hh = Math.floor(seconds / 3600), mm = Math.floor(seconds / 60) % 60, ss = Math.floor(seconds) % 60;
         return hh + ":" + (mm < 10 ? "0" : "") + mm + ":" + (ss < 10 ? "0" : "") + ss;
