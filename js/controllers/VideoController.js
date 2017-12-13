@@ -16,7 +16,8 @@ app.controller('VideoController', ['$scope', '$window', '$interval', function($s
             description: "Abour love and cheats"
         }
     ];
-        $scope.videoDisplay = document.getElementById("VideoElement");
+    
+    $scope.videoDisplay = document.getElementById("VideoElement");
     $scope.videoSource = $window.videoSource;
     $scope.titleDisplay = $window.titleDisplay;
     $scope.videoDescription = $window.videoDescription;

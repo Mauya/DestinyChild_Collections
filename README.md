@@ -18,7 +18,7 @@ The project features Angularjs framework including controllers and viewers toget
 
 * Secondly, download [Nodejs](https://nodejs.org/en/download). For this project you need to install [Nodejs](https://nodejs.org/en/download) which include latest version of npm. 
 
-* Using npm Install: install libraries and dependencies (Package.json) install Bower.json and using bower install, install Angularjs framework, bootstrap and also this allows you to add any dependencies such as audioplayer, fontowesome etc. For more information on how to start check official website for AngularJS.
+* Using npm: install libraries and dependencies (Package.json) install Bower.json and using bower install, install Angularjs framework, bootstrap and also this allows you to add any dependencies such as audioplayer, fontowesome etc. For more information on how to start check official website for AngularJS.
 
 ### Tech Used
 
