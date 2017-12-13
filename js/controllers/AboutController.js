@@ -22,9 +22,9 @@ app.controller('AboutController', ['$scope', function($scope) {
     $scope.currentTab = {};
     $scope.onClickTab = function(tab){
         scope.currentTab = tab.name, tab.photo, tab.bio;
-    }
+    };
 
     $scope.isActiveTab = function(content){
         return content == $scope.currentTab;
-    }
+    };
 }]);
