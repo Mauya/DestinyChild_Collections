@@ -6,8 +6,7 @@ $scope.contacts =[
   email:"collector@destinyschildcollectors.com",
   telephone: "+1 444-383-2200"
   },
-$scope.resultMessage,
-$scope.formdata, // is object holding name, email etc
+
 $scope.contactFormDisabled = false,
 $scope.submitForm = function(isValid) {
     this.formInput = {
