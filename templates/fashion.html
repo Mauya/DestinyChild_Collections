@@ -1,11 +1,13 @@
-<h1>{{albumTitle}}</h1>
-<div class="row_album">
-    <div id="album">
-      <div class="col-md-12">      
-        <div class="col-md-3" ng-repeat="photo in photos">
-          <img class="thumbnail" ng-src="{{ photo.src }}" width="242" height="200"> 
-          <div class="desc">{{photo.desc}}</div>  
-        </div>
-      </div>
-    </div>
-</div>
+<h2>{{albumTitle}}</h2>
+	<div class = "container">
+		<div class="row_album">
+			<div id="album">
+			  <div class="col-md-12">      
+			    <div class="col-md-3" ng-repeat="photo in photos">
+			      <img class="thumbnail" ng-src="{{ photo.src }}" width="242" height="200"> 
+			      <div class="desc">{{photo.desc}}</div>  
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>

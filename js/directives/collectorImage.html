@@ -1,0 +1,12 @@
+<div class="container">
+	<div id="slides_control">
+		<uib-carousel interval="myInterval">
+		  <uib-slide ng-repeat="slide in slides" active="slide.active">
+		    <img class="gifs" ng-src="{{info.image}}">
+		      <div class="carousel-caption">
+		        <h4>Slide {{$index+1}}</h4>
+		      </div>
+		    </uib-slide>
+		</uib-carousel>
+	</div> 
+</div>

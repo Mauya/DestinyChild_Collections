@@ -4,6 +4,7 @@ app.directive('collectorInfo', function() {
     scope: { 
       info: '=' 
     }, 
-    templateUrl: 'js/directives/collectorImage.html' 
+    templateUrl: 'js/directives/collectorImage.html',
+    controller: 'PhotosController' 
   }; 
 });
