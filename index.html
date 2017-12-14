@@ -42,18 +42,11 @@
 <div ng-view>
 </div>
 
-</div class = "container-fluid">
+<div class = "container-fluid">
 	<div class="footer sticky">
 		<div class="audio sticky-top">
-			<audio src="" controls id="audioPlayer">
-			Sorry, your browser does not support html5!
-			</audio>
+			<div audioPlayer></div>
 		</div>
-		<ul id="playlist" class="hide">
-			<li><source src="http://hiperload.com/s/kf4q59s8c" type="audio/mpeg">Brown eyes</a></li>
-			<li><source src="http://hiperload.com/s/cn1d32n5u" type="audio/mpeg">Say My Name</a></li>
-			<li><source src="http://hiperload.com/s/dn7g08d8o" type="audio/mpeg">Survivor</a></li>
-		</ul>
 		<div class="row">
 			<div class = "col-sm-4">
 				<h5>MUSIC AVAILABLE HERE</h5>
@@ -108,32 +101,6 @@
         </div>
 	</div>
 </div>
-<script>
-	audioPlayer();
-	function audioPlayer(){
-	    var currentSong = 0;
-	    $("#audioPlayer")[0].src = $("#playlist li a")[0];
-	    $("#audioPlayer")[0].play();
-	    $("#playlist li a").click(function(e){
-	       e.preventDefault(); 
-	       $("#audioPlayer")[0].src = this;
-	       $("#audioPlayer")[0].play();
-	       $("#playlist li").removeClass("current-song");
-	        currentSong = $(this).parent().index();
-	        $(this).parent().addClass("current-song");
-	    });
-	    
-	    $("#audioPlayer")[0].addEventListener("ended", function(){
-	       currentSong++;
-	        if(currentSong == $("#playlist li a").length)
-	            currentSong = 0;
-	        $("#playlist li").removeClass("current-song");
-	        $("#playlist li:eq("+currentSong+")").addClass("current-song");
-	        $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
-	        $("#audioPlayer")[0].play();
-	    });
-}
-</script>
 <script src='js/app.js'></script>
 <script src='js/controllers/HomeController.js'></script>
 <script src='js/controllers/AboutController.js'></script>
