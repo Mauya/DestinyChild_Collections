@@ -33,7 +33,7 @@ app.controller('MusicController', function($scope){
 		id: 4,
 		img: "imgs/albums/aimg5.jpg",
 		name: "Destiny Fulfilled",
-		year: 2004
+		year: 2004,
 		link: "https://www.amazon.com/Survivor-Destinys-Child/dp/B00005B5ZU"	
 	},
   ];

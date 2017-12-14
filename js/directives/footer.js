@@ -2,8 +2,8 @@ app.directive('audioPlayer', function() {
   	return { 
 	    restrict: 'E',
 	    scope: true, 
-	    replace:true,
+	    transclude: false,
 	    templateurl: "/js/directives/footer.html",
-	    controller: "audioController"
+	    controller: "AudioController"
  	};
 });    

@@ -1,6 +1,7 @@
 app.controller('PhotosController', ['$scope', function($scope) {
   $scope.title1 = "Destiny's Child Photo Gallery";
-  $scope.myInterval = 0000;
+  $scope.myInterval = 5000;
+  $scope.noWrapSlides=false;
   $scope.active = 0; //Retrieve and set images
   $scope.slides= [ 
 	  { 

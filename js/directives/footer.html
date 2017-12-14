@@ -1,19 +1,17 @@
-<div id="audioWrapper">
-	<div id="player">
-	    <audio controls="controls" id="audio-player">
-	    	<source src="{{list.path}}"" type="audio/mp3"/>
-	        your browser does not support HTML5 player
-	    </audio></br>
-	    <div class="rewind">
-	        <a rel="nofollow" rel="noreferrer" id="btnPrev">&laquo;</a>
-	        <a rel="nofollow" rel="noreferrer" id="btnNext">&raquo;</a>   
-	    </div>
-	    <br><span class="List.name">loading...</span>
-	</div>
-	<ul id="playlist" class="hide">
-	    <li class="audio play" data-music-id="1">Brown eyes</li>
-	    <li class="audio play" data-music-id="2">Say My Name</li>
-	    <li class="audio play" data-music-id="3">Survivor</li>
-	    <li class="audio play" data-music-id="4">Lose My breath</li>
-	</ul>
+<div id="audio-player">
+    <audio controls="controls">
+    	<source src="{{list.path}}"" type="audio/mp3"/>
+        your browser does not support HTML5 player
+    </audio></br>
+    <div class="rewind">
+        <a rel="nofollow" rel="noreferrer" id="btnPrev">&laquo;</a>
+        <a rel="nofollow" rel="noreferrer" id="btnNext">&raquo;</a>   
+    </div>
+    <br><span class="List.name">loading...</span>
 </div>
+<ul id="playlist" class="hide">
+    <li class="audio play" data-music-id="1">Brown eyes</li >
+    <li class="audio play" data-music-id="2">Say My Name</li>
+    <li class="audio play" data-music-id="3">Survivor</li>
+    <li class="audio play" data-music-id="4">Lose My breath</li>
+</ul>
